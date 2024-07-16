@@ -165,9 +165,39 @@ Une validation croisée à 5 plis a été utilisée pour évaluer la performance
 ##### 2.3.4 Modèle initial
 Un modèle de régression logistique a été utilisé comme premier modèle. Le score de validation croisée obtenu est de 0.676.
 
-<p align="center">
-  <img height="200" width="600" src="https://github.com/user-attachments/assets/0a06ee6f-0ea8-49af-82fd-d46d61394f57" alt>
-  <br>
-  <em>La solution du deuxième TP</em>
-</p>
 
+
+#### 2.3.5 Amélioration du modèle
+1. Ajout de la variable 'Pclass' :
+En ajoutant la variable 'Pclass' au modèle, le score de validation croisée a augmenté à 0.681. Les coefficients de la régression logistique ont montré que les variables indicatrices de 'Pclass' sont importantes pour prédire la survie.
+
+2. Ajout des variables 'Sex' et 'Age' :
+En ajoutant les variables 'Sex' et 'Age' au modèle, le score de validation croisée a augmenté à 0.820. Les coefficients ont montré que 'Sex' est une variable très importante dans la prédiction de la survie.
+
+3. Ajout de la variable 'is child' :
+En ajoutant la variable 'is child' (indicatrice si le passager est un enfant) au modèle, le score de validation croisée est resté à 0.820.
+
+#### 2.3.6 Modèles alternatifs
+- Random Forest :
+Un classifieur Random Forest a été utilisé pour construire un modèle alternatif. Le score obtenu était supérieur à celui de la régression logistique.
+
+- Gradient Boosting Classifier :
+Un Gradient Boosting Classifier a également été utilisé pour construire un modèle alternatif. Le score obtenu était de 0.837.
+
+- Support Vector Machine (SVM) :
+Les SVM sont des modèles d’apprentissage supervisé utilisés pour la classification et la régression. Ils cherchent à trouver un hyperplan optimal qui sépare les données en classes. Les SVM sont efficaces pour les problèmes de classification binaire et peuvent également être étendus à la classification multiclasse. Ils sont sensibles au choix du noyau (linéaire, polynomial, RBF, etc.). Un SVM avec un noyau linéaire a été utilisé pour construire un autre modèle alternatif. Le score obtenu était de 0.803.
+
+## 2.4 Nouvelles variables
+Boosting (Renforcement) : Le boosting est une technique d’apprentissage automatique qui combine plusieurs modèles faibles (par exemple, des arbres de décision peu profonds) pour créer un modèle plus puissant. Il fonctionne en ajustant itérativement les poids des observations mal classées, ce qui permet d’améliorer la précision du modèle global. Les algorithmes de boosting populaires incluent AdaBoost, Gradient Boosting et XGBoost. Des nouvelles variables 'Title' (titre dans le nom) et 'Cabin' ont été créées à partir des données existantes. En les ajoutant au modèle, le score de validation croisée a augmenté à 0.820.
+
+## 2.5 Conclusion
+
+À partir de l’analyse des variables et de la modélisation des données du Titanic, plusieurs conclusions peuvent être tirées :
+
+Les variables 'Sex' et 'Pclass' sont très importantes pour prédire la survie des passagers.
+<br>
+L’ajout de nouvelles variables telles que 'Title' et 'Cabin' peut améliorer la performance du modèle.
+<br>
+Les modèles de type Gradient Boosting Classifier ont donné les meilleurs scores de prédiction.
+<br>
+Des efforts supplémentaires pourraient être faits pour explorer d’autres variables potentiellement importantes et pour affiner les modèles existants afin d’obtenir de meilleures performances de prédiction.
