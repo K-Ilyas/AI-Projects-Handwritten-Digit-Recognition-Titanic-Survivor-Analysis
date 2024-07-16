@@ -52,3 +52,12 @@ Chaque classificateur est entraîné et évalué en utilisant une validation cro
 ### 1.6 Conclusion
 Pour conclure, une série de modèles de machine learning ont été formés et évalués sur l’ensemble de données MNIST pour la tâche de classification des chiffres. Le modèle de forêt aléatoire s’est révélé être le plus performant. Des travaux futurs pourraient se concentrer sur l’optimisation et le réglage fin des modèles pour améliorer encore leur précision et efficacité.
 
+<p align="center">
+  <img height="400" width="600" src="https://github.com/user-attachments/assets/216980f9-2ab9-4cb7-a045-84fa54353a5b" alt>
+  <br>
+  <em>La solution du premier TP</em>
+</p>
+
+
+---
+
