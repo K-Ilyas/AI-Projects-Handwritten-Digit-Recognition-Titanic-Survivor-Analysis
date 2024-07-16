@@ -214,11 +214,44 @@ Des efforts supplémentaires pourraient être faits pour explorer d’autres var
   <em>Plot 1</em>
 </p>
 
+
+
 <p align="center">
-  <img height="400" width="800" src="https://github.com/user-attachments/assets/d3194ea0-de4d-4659-85dd-5a9bb23ed1f2" alt>
+  <img height="400" width="800" src="https://github.com/user-attachments/assets/2aae11de-f738-420f-8de8-e5c75073fa8c" alt>
   <br>
-  <em>Plot 1</em>
+  <em>Plot 2</em>
 </p>
+
+
+<p align="center">
+  <img height="400" width="800" src="https://github.com/user-attachments/assets/70ae4e9d-ae17-419c-a54d-3ada893aeaf6" alt>
+  <br>
+  <em>Plot 3</em>
+</p>
+
+
+<p align="center">
+  <img height="400" width="800" src="https://github.com/user-attachments/assets/24141ce5-e93a-49b6-9092-9850d33db0e0" alt>
+  <br>
+  <em>Plot 4</em>
+</p>
+
+
+
+<p align="center">
+  <img height="400" width="800" src="https://github.com/user-attachments/assets/e7e61a61-a019-4246-8ee8-b22b78fc3f24" alt>
+  <br>
+  <em>Plot 5</em>
+</p>
+
+
+<p align="center">
+  <img height="400" width="800" src="https://github.com/user-attachments/assets/9f745bf4-0f6c-4024-b20d-aeaf8661266b" alt>
+  <br>
+  <em>Plot 6</em>
+</p>
+
+
 
 
 
