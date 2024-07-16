@@ -166,7 +166,7 @@ Une validation croisée à 5 plis a été utilisée pour évaluer la performance
 Un modèle de régression logistique a été utilisé comme premier modèle. Le score de validation croisée obtenu est de 0.676.
 
 <p align="center">
-  <img height="200" width="600" src="https://github.com/user-attachments/assets/5cf57b5c-4b42-4707-9259-087c5799a6f1" alt>
+  <img height="100" width="400" src="https://github.com/user-attachments/assets/cb54fbfd-9163-445c-bc50-a12fad8ab328" alt>
   <br>
   <em>La solution du deuxième TP</em>
 </p>
@@ -205,3 +205,21 @@ L’ajout de nouvelles variables telles que 'Title' et 'Cabin' peut améliorer l
 Les modèles de type Gradient Boosting Classifier ont donné les meilleurs scores de prédiction.
 <br>
 Des efforts supplémentaires pourraient être faits pour explorer d’autres variables potentiellement importantes et pour affiner les modèles existants afin d’obtenir de meilleures performances de prédiction.
+### Plots :
+---
+
+<p align="center">
+  <img height="400" width="800" src="https://github.com/user-attachments/assets/d3194ea0-de4d-4659-85dd-5a9bb23ed1f2" alt>
+  <br>
+  <em>Plot 1</em>
+</p>
+
+<p align="center">
+  <img height="400" width="800" src="https://github.com/user-attachments/assets/d3194ea0-de4d-4659-85dd-5a9bb23ed1f2" alt>
+  <br>
+  <em>Plot 1</em>
+</p>
+
+
+
+
