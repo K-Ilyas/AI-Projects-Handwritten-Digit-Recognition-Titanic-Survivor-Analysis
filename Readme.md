@@ -61,3 +61,105 @@ Pour conclure, une série de modèles de machine learning ont été formés et �
 
 ---
 
+## Les survivants du Titanic
+
+### 2.1 Importation et visualisation des données
+Les données ont été importées à partir du fichier `train.csv` et les 10 premières lignes ont été affichées pour une première exploration.
+
+```python
+print(train.head(10))
+```
+
+
+### 2.2 Analyse des variables
+#### 2.2.1 Variables à analyser
+Les variables suivantes ont été analysées :
+
+- Survived
+- PClass
+- Name
+- Sex
+- Age
+- SibSp
+- Parch
+- Ticket
+- Fare
+- Cabin
+- Embarked
+
+#### 2.2.2 Résultats de l’analyse
+1. Survived
+
+- Signification : Indique si un passager a survécu (1) ou non (0) au naufrage du Titanic.
+- Type : Variable binaire ou catégorielle.
+- Valeurs manquantes : Aucune.
+
+
+2. PClass
+
+- Signification : Indique la classe du billet du passager (1ère, 2ème ou 3ème classe), un proxy pour la classe socio-économique.
+- Type : Variable ordonnée ou catégorielle.
+- Valeurs manquantes : Aucune.
+
+3. Name
+
+- Signification : Nom complet du passager, incluant le titre et le nom de famille.
+- Type : Variable textuelle ou nominale.
+- Valeurs manquantes : Aucune.
+4. Sex
+
+- Signification : Sexe du passager (male ou female).
+- Type : Variable binaire ou catégorielle.
+- Valeurs manquantes : Aucune.
+
+5. Age
+
+- Signification : Âge du passager en années.
+- Type : Variable numérique ou continue.
+- Valeurs manquantes : 177 valeurs manquantes (environ 20% des données).
+
+6. SibSp
+
+- Signification : Nombre de frères, sœurs ou conjoints à bord.
+- Type : Variable numérique ou discrète.
+- Valeurs manquantes : Aucune.
+7. Parch
+
+- Signification : Nombre de parents ou d’enfants à bord.
+- Type : Variable numérique ou discrète.
+- Valeurs manquantes : Aucune.
+8. Ticket
+
+- Signification : Numéro du billet du passager.
+- Type : Variable textuelle ou nominale.
+- Valeurs manquantes : Aucune.
+0. Fare
+
+- Signification : Prix du billet du passager en livres sterling.
+- Type : Variable numérique ou continue.
+- Valeurs manquantes : 1 valeur manquante (moins de 1% des données).
+10. Cabin
+
+- Signification : Numéro de cabine du passager.
+- Type : Variable textuelle ou nominale.
+- Valeurs manquantes : 687 valeurs manquantes (environ 77% des données).
+11. Embarked
+
+- Signification : Port d’embarquement du passager (C = Cherbourg, Q = Queenstown, S = Southampton).
+- Type : Variable catégorielle ou nominale.
+- Valeurs manquantes : 2 valeurs manquantes (moins de 0.22% des données).
+### 2.3 Modélisation
+#### 2.3.1 Préparation des données
+Les variables explicatives utilisées pour le premier modèle sont 'Fare', 'SibSp' et 'Parch'.
+
+```python
+target = train[['Fare', 'SibSp', 'Parch']]
+```
+#### 2.3.2 Note: interprétation concernant les variables du modèle LogisticRegression
+Les coefficients de la régression logistique permettent d’interpréter l’importance des variables explicatives dans le modèle. Plus un coefficient est grand en valeur absolue, plus la variable correspondante est importante dans le modèle. Les variables explicatives les plus importantes dans le modèle sont les variables Pclass 1 et Pclass 3, qui sont les variables indicatrices de la variable Pclass. Ces variables sont les plus importantes car elles ont les coefficients les plus grands en valeur absolue. Elles sont donc les variables les plus discriminantes pour prédire la survie des passagers du Titanic. Les variables SibSp, Parch et Fare sont moins importantes, car elles ont des coefficients plus petits en valeur absolue. Elles sont donc moins discriminantes pour prédire la survie des passagers du Titanic.
+
+#### 2.3.3 Stratégie de validation
+Une validation croisée à 5 plis a été utilisée pour évaluer la performance des modèles.
+
+##### 2.3.4 Modèle initial
+Un modèle de régression logistique a été utilisé comme premier modèle. Le score de validation croisée obtenu est de 0.676.
