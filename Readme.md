@@ -133,7 +133,8 @@ Les variables suivantes ont été analysées :
 - Signification : Numéro du billet du passager.
 - Type : Variable textuelle ou nominale.
 - Valeurs manquantes : Aucune.
-0. Fare
+
+9. Fare
 
 - Signification : Prix du billet du passager en livres sterling.
 - Type : Variable numérique ou continue.
