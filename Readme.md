@@ -165,7 +165,11 @@ Une validation croisée à 5 plis a été utilisée pour évaluer la performance
 ##### 2.3.4 Modèle initial
 Un modèle de régression logistique a été utilisé comme premier modèle. Le score de validation croisée obtenu est de 0.676.
 
-
+<p align="center">
+  <img height="200" width="600" src="https://github.com/user-attachments/assets/5cf57b5c-4b42-4707-9259-087c5799a6f1" alt>
+  <br>
+  <em>La solution du deuxième TP</em>
+</p>
 
 #### 2.3.5 Amélioration du modèle
 1. Ajout de la variable 'Pclass' :
