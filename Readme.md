@@ -251,6 +251,9 @@ Des efforts supplémentaires pourraient être faits pour explorer d’autres var
   <em>Plot 6</em>
 </p>
 
+### Demo 
+
+(Demo)[https://replit.com/@K-Ilyas/AI-Projects-Handwritten-Digit-Recognition-Titanic-Survivor-A]
 
 
 
