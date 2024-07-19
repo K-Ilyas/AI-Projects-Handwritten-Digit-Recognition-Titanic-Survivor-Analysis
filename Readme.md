@@ -253,7 +253,7 @@ Des efforts supplémentaires pourraient être faits pour explorer d’autres var
 
 ### Demo 
 
-(https://replit.com/@K-Ilyas/AI-Projects-Handwritten-Digit-Recognition-Titanic-Survivor-A)[Demo]
+[Demo](https://replit.com/@K-Ilyas/AI-Projects-Handwritten-Digit-Recognition-Titanic-Survivor-A)
 
 
 
